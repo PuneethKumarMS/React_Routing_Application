@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import './style.css' 
 
 import './App.css';
 
