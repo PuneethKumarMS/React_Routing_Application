@@ -1,58 +1,65 @@
-# React Profile Card App
+# React Routing Application
 
-A simple React application demonstrating the use of **props**, **external CSS**, and **inline styles** to build a reusable `ProfileCard` component.  
-Each card displays a **profile picture**, **name**, and **bio**, with a dynamic background color passed via props.
+This project demonstrates **routing in React** using the `react-router-dom` library.  
+It includes a navigation bar with links to **Home**, **About**, and **Contact** pages, where each page is rendered dynamically based on the selected route.  
+The **active link** in the navigation menu is highlighted to indicate the current page.
 
 ---
 
 ## 🚀 Features
-- Displays profile information:
-  - Profile picture (circular)
-  - User name
-  - Short bio/description
-- Uses **external CSS** for layout, typography, and structure.
-- Uses **inline styles** for dynamic background color.
-- Responsive design.
-- Hover effects for interactivity.
-- Supports multiple profile cards.
+- Navigation menu with active link highlighting
+- Separate components for:
+  - Home
+  - About
+  - Contact
+- Implemented using:
+  - `BrowserRouter`
+  - `Routes`
+  - `Route`
+  - `NavLink`
+
+---
+
+## 🛠️ Technologies Used
+- React
+- react-router-dom
+- CSS (for styling)
 
 ---
 
 ## 📂 Project Structure
 ```bash
-my-profile-card-app/
+react-routing-app/
 ├── public/
 │   ├── index.html
-│   └── vite.svg
+│   └── favicon.ico
 ├── src/
-│   ├── assets/
-│   │   └── profile.webp
 │   ├── components/
-│   │   └── profileCard.jsx
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   └── Navbar.jsx
 │   ├── App.jsx
-│   ├── App.css
 │   ├── style.css
-│   ├── main.jsx
-│   └── index.css
+│   └── main.jsx
 ├── package.json
 ├── vite.config.js
 └── README.md
 ```
-# 1️⃣ Install Node.js (if not already installed)
-- **node -v**
-- **npm -v**
+## 📦 Installation & Usage
 
-# 2️⃣ Create the project using Vite
-- **npm create vite@latest my-profile-card-app -- --template react**
+```bash
+# 1️⃣ Create a new React project using Vite
+npm create vite@latest react-routing-app -- --template react
 
-# Select framework: **React**
-# Select variant: **JavaScript**
+# 2️⃣ Navigate into the project folder
+cd react-routing-app
 
-# 3️⃣ Navigate into the project folder
-- **cd my-profile-card-app**
+# 3️⃣ Install dependencies
+npm install
 
-# 4️⃣ Install dependencies
-- **npm install**
+# 4️⃣ Install React Router
+npm install react-router-dom
 
 # 5️⃣ Start the development server
-- **npm run dev**
+npm run dev
