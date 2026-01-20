@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'; // Used for client-side routing and navigation in the React application
 
 // importing files from component folder
 import Home from './components/Home';
